@@ -1,0 +1,162 @@
+
+.chart-box{
+    width: 96%;
+    background-color: #ffffff0d;
+    border-radius: 16px;
+    margin: 20px auto;
+}
+
+.box-header{
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 10px 40px;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-item-hover);
+    line-height: normal;
+    width: 100%;
+}
+
+.box-header a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    margin-top: 10px;
+}
+
+.chart-btn {
+    margin-left: 5px;
+    width: 29px;
+    height: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    background-color: #ed2b91;
+    margin-top: 9px;
+    cursor: pointer;
+}
+
+.ic-play{
+    color: white;
+    font-size: 12px;
+}
+
+.chart-list{
+    width:100%;
+    /* flex: 1; */
+}
+
+.chart-item{
+    width: 96%;
+    display: flex;
+    padding: 10px 0;
+    margin: 0 auto;
+    border-radius: 6px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    /* flex: 1; */
+}
+
+.chart-item:hover{
+    background-color: #ffffff1a;
+}
+
+.number{
+    -webkit-text-stroke: 1.5px #fff;
+    opacity: .7;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    width: 32px;
+    letter-spacing: normal;
+    text-align: center;
+    color: transparent;
+    font-family: "Roboto",sans-serif;
+    margin-top: 4px;
+    text-align: right;
+    color: #4a90e200 !important;
+}
+
+.minus{
+    color: white;
+    opacity: .7;
+    margin-top: 15px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.chart-item img{
+    width: 40px;
+    height: 40px;
+    margin-left: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.name-artist{
+    display: block;
+    flex: 1;
+}
+
+.chart-item .name{
+    color: #fff;
+    font-size: 14px;    
+    font-family: Inter,sans-serif;
+    margin-left: 8px;
+    display: block;
+    line-height: 1.3;
+}
+
+.chart-item .artist{
+    color: #fff;
+    font-size: 12px;    
+    font-family: Inter,sans-serif;
+    display: block;
+    font-weight: 10;
+    margin-left: 9px;
+    margin-top: 3px;
+    opacity: .7;
+}
+
+.chart-box .all{
+    width: 100%;
+    text-align: center;
+}
+
+.chart-box .show-all{
+    border-radius: 999px;
+    border: 1px solid #fff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.43;
+    text-align: center;
+    color: #fff;
+    padding: 8px 68px;
+    display: inline-block;
+    margin: 15px auto;
+}
+
+.chart-box .duration{
+    flex: 1;
+    margin-top: 8px;
+    opacity: .9;
+    margin-left: 120px;
+}
+
+.addToList{
+    font-size: 15px;
+    margin-top: 12px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.addToLib{
+    font-size: 16px;
+    margin-top: 12px;
+    margin-right: 20px;
+    cursor: pointer;
+}

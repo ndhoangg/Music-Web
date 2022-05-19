@@ -1,0 +1,39 @@
+.discover{
+    width: 96%;
+    margin: 20px auto;
+}
+.discover-item{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.discover-item h3{
+    font-size: 18px;
+    font-weight: 700;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.content .item{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.discover-item .item img{
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.discover-item .item span{
+    width: 90%;
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.discover-item .item span:hover{
+    color: #fe63da;
+    cursor: pointer;
+}

@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+  background-color: #37075d;
+  color: white;
+}
+.sidebar {
+  background-color: #411465;
+  color: white;
+  position: fixed;
+  height: 100%;
+  z-index: 100;
+  width: 240px;
+  font-size: 14px;
+}
+.sidebar-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+li {
+  list-style-type: none;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.navbar{
+  display: block;
+}
+.navbar-brand {
+  height: 70px;
+  line-height: 70px;
+  padding: 0 25px 0 28px;
+  text-align: center;
+  font-size: 30px;
+}
+.title {
+  font-weight: 700;
+  padding: 10px 25px;
+}
+.navbar-item {
+  height: 44px;
+  line-height: 44px;
+  padding: 10px 25px;
+}
+
+hr {
+  border-color: rgb(165, 162, 162);
+}
+.navicon {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  margin-right: 10px;
+}
+.midmenu {
+  height: -moz-calc(100%-588px);
+  height: -webkit-calc(100% -588px);
+  height: calc(100%-588px);
+}
+.upload-music {
+  width: 240px;
+  height: 54px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 32px;
+}
+.special-icon {
+  position: absolute;
+  left: 25px;
+  font-size: 30px;
+  font-weight: 400;
+}

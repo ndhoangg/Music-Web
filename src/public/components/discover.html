@@ -1,0 +1,70 @@
+<link rel="stylesheet" href="../css/discover.css">
+
+<div class="discover">
+    <div class="discover-item">
+        <h3>Gợi Ý</h3>
+        <div class="content">
+            <div class="item" data-id="ZWZB969E">
+                <img src="../img/top100-nhac-tre.jpg" alt="">
+                <span>Top 100 Nhạc Trẻ Hay Nhất</span>
+            </div>
+            <div class="item" data-id="ZWZB96AB">
+                <img src="../img/top100-pop-usuk.jpg" alt="">
+                <span>Top 100 Pop Âu Mỹ Hay Nhất</span>
+            </div>
+            <div class="item" data-id="ZWZB969F">
+                <img src="../img/top100-tru-tinh.jpg" alt="">
+                <span>Top 100 Nhạc Trữ Tình Hay Nhất</span>
+            </div>
+            <div class="item" data-id="ZWZB96C7">
+                <img src="../img/top100-edm.jpg" alt="">
+                <span>Top 100 Nhạc EDM Âu Mỹ Hay Nhất</span>
+            </div>
+            <div class="item" data-id="ZWZB96AI">
+                <img src="../img/top100-rap-viet.jpg" alt="">
+                <span>Top 100 Nhạc Rap Việt Nam Hay Nhất</span>
+            </div>
+            <div class="item" data-id="ZWZB96DC">
+                <img src="../img/top100-kpop.jpg" alt="">
+                <span>Top 100 Nhạc Hàn Quốc Hay Nhất</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="discover-item">
+        <h3>Những Bản Hits Việt</h3>
+        <div class="content">
+            <div class="item" data-id="ZAI0CU09">
+                <img src="../img/combo-hit.jpg" alt="">
+                <span>Combo Hits</span>
+            </div>
+            <div class="item" data-id="ZWZCOU98">
+                <img src="../img/nhac-viet-hom-nay-nghe-gi.jpg" alt="">
+                <span>Top 100 Pop Âu Mỹ Hay Nhất</span>
+            </div>
+            <div class="item" data-id="670AABW0">
+                <img src="../img/vpop-thang-1-co-gi-hot.jpg" alt="">
+                <span>V-Pop Tháng 1/2021 Có Gì Hot?</span>
+            </div>
+            <div class="item" data-id="ZOBEA8BO">
+                <img src="../img/mashup-vpop.jpg" alt="">
+                <span>Mashup V-Pop</span>
+            </div>
+            <div class="item" data-id="ZU9EUF68">
+                <img src="../img/vpop-nhac-moi-noi-bat.jpg" alt="">
+                <span>Top 100 Nhạc Rap Việt Nam Hay Nhất</span>
+            </div>
+            <div class="item" data-id="ZA9CIDA0">
+                <img src="../img/mot-buoc-thanh-sao.jpg" alt="">
+                <span>Một Bước Thành Sao</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('.item').click(function() {
+        loadComponent('playList');
+        getPlayList($(this).data('id'), showPlayList, '.playList-header' , ".playList")
+    })
+</script>

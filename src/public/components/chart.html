@@ -1,0 +1,61 @@
+<div class="chart-wrapper">
+
+    <head>
+        <link rel="stylesheet" href="../css/Chart.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/501bdd9c6f.js" crossorigin="anonymous"></script>
+    </head>
+
+    <div class="" style=" display: flex; justify-content:space-around; margin-top: 20px;">
+        <!-- here -->
+        <div class="chart-box">
+            <div class="box-header">
+                <a href="">Việt Nam</a>
+                <div class="chart-btn" data-id="670ZZ066" onclick="playThisList(this)">
+                    <i class="fas fa-play ic-play"></i>
+                </div>
+            </div>
+            <div class="chart-list vn"></div>
+            <div class="all">
+                <a class="show-all" data-id="IWZ9Z08I" data-list="670ZZ066" href="#">Xem tất cả</a>
+            </div>
+        </div>
+
+        <!-- end -->
+        <div class="chart-box">
+            <div class="box-header">
+                <a href="">US-UK</a>
+                <div class="chart-btn" data-id="6707AA98" onclick="playThisList(this)">
+                    <i class="fas fa-play ic-play"></i>
+                </div>
+            </div>
+            <div class="chart-list us-uk"></div>
+            <div class="all">
+                <a class="show-all" data-id="IWZ9Z0BW" data-list="6707AA98" href="#">Xem tất cả</a>
+            </div>
+        </div>
+        <div class="chart-box k-pop">
+            <div class="box-header">
+                <a href="">K-POP</a>
+                <div class="chart-btn" data-id="6707A8ID" onclick="playThisList(this)">
+                    <i class="fas fa-play ic-play"></i>
+                </div>
+            </div>
+            <div class="chart-list kpop"></div>
+            <div class="all">
+                <a class="show-all" data-id="IWZ9Z0BO" data-list="6707A8ID" href="#">Xem tất cả</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        getChart(showTop5,'.vn', 'IWZ9Z08I', 'vn');
+        getChart(showTop5, '.us-uk', 'IWZ9Z0BW', 'us');
+        getChart(showTop5, '.kpop', 'IWZ9Z0BO', 'kpop');
+
+        $('.show-all').click(function(){
+            loadComponent('chartAll');
+            getChart(showAll, '.showAll', $(this).data('id'), 'current');
+        })
+    </script>
+</div>

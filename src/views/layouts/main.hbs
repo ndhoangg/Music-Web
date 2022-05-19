@@ -1,0 +1,50 @@
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUST MP3 | Nghe nhạc chất lượng cao</title>
+    <link rel="shortcut icon" href="/img/logo.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/css/root.css">
+    <script src="/js/vendor/jquery.min.js"></script>
+</head>
+
+<body>
+    {{{body}}}
+    {{>header}}
+    <div class="body" style="display: flex;">
+        <div class="grid-2" style="width: 240px; height: 100%">{{>menu}}</div>
+        <div class="grid-8" style="flex: 1;">
+            <div class="" style="height: 70px;"></div>
+            <div class="player_container" style="width: 100%; height: auto;">{{>player}}</div>
+            <div id="component" style="width: 100%;"></div>
+        </div>
+    </div>
+    <i class="fas fa-chevron-circle-up scroll-top" id="toTop" style="display:none;"></i>
+    <script src="/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="/js/controller.js"></script>
+    <script src="/js/newReleaseChart.js"></script>
+    <script src="/js/Chart.js"></script>
+    <script src="/js/playList.js"></script>
+
+    <script>
+        loadComponent('discover');
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop()) {
+                $('#toTop').fadeIn();
+            } else {
+                $('#toTop').fadeOut();
+            }
+        });
+
+        $("#toTop").click(function () {
+            $("html, body").animate({ scrollTop: 0 }, 1000);
+        });
+    </script>
+</body>
+
+</html>

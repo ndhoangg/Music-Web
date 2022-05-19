@@ -1,0 +1,245 @@
+/* NORMAL */
+.aplayer{
+    background: none;
+    /* width: 96%; */
+}
+
+.aplayer-notice{
+    display: none !important;
+}
+
+.myCssPlayer{
+    display: none;
+    margin: 0;
+}
+
+.myCssPlayer .aplayer-pic{
+    height: 130px !important;
+    width: 130px !important;
+    border-radius: 50%;
+    margin-top: 10px !important;
+    margin-left: 10px !important;
+}
+
+.myCssPlayer .aplayer-body{
+    height: 150px;
+    border-radius: 20px;
+    /* background: linear-gradient(180deg,#114357,#9c757c); */
+    background-color: #411465;
+}
+
+.myCssPlayer .aplayer-info{
+     height: 150px !important;
+}
+
+/* Title */
+.myCssPlayer .aplayer-music{
+    margin-left: 20px !important;
+}
+
+.myCssPlayer .aplayer-title{
+    color: #fbfafb;
+    font-weight: 600;
+    opacity: 0.9;
+    font-size: 16px !important;
+}
+
+.myCssPlayer .aplayer-author{
+    color: #fbfafb !important;
+    opacity: 0.9;
+}
+
+ /* Lyric */
+.myCssPlayer .aplayer-lrc{ 
+     display: block !important;
+     height: 36px !important;
+     position: relative;
+     top: 30px;
+     padding-top: 0.5px;
+     margin-bottom: 50px !important;
+}
+
+.myCssPlayer .aplayer-lrc-contents p{
+    font-size: 14px !important;
+    line-height: 14px!important;
+    color: #ffffff !important;
+}
+
+.myCssPlayer .aplayer-lrc p.aplayer-lrc-current{
+    font-size: 18px !important;
+    color: #e5e5e5 !important;
+}
+
+.myCssPlayer .aplayer-lrc p{
+    line-height: 20px!important;
+ }
+
+ .myCssPlayer .aplayer-lrc:after, .myCssPlayer .aplayer-lrc:before {
+    content: none;    
+}
+/* //Lyric */
+
+/* init */
+.myCssPlayer .aplayer-icon-back, .myCssPlayer .aplayer-icon-forward, .myCssPlayer .aplayer-icon-order, .myCssPlayer .aplayer-icon-play{
+    display: inline-block !important;
+}
+.myCssPlayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path{
+    fill: #fff;
+}
+.myCssPlayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon:hover path{
+    fill: #e5e5e5;
+}
+/* .myCssPlayer .aplayer-volume-bar{
+    max-height: 80px !important;
+    height: 80px !important;
+} */
+.myCssPlayer .aplayer-icon{
+    height: 25px !important;
+    margin-left: 5px !important;
+    margin-right: 8px !important;
+}
+.myCssPlayer svg{
+    width: 140%;
+}
+/* Thời gian, nút điều khiển */
+.myCssPlayer .aplayer-bar{
+    margin-top: 3px;
+}
+
+.myCssPlayer .aplayer-bar, .myCssPlayer .aplayer-loaded, .myCssPlayer .aplayer-played{ 
+    height: 5px !important;
+ }
+
+.myCssPlayer .aplayer-played{
+    background: #2c96f9 !important;
+}
+
+.myCssPlayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb { 
+     height: 12px !important;
+     width: 12px !important;
+}
+
+.myCssPlayer .aplayer-controller{
+    height: 20px !important;
+}
+
+.myCssPlayer .aplayer-info .aplayer-controller .aplayer-time{
+    font-size: 15px;
+    color: #e5e5e5;
+}
+
+/* GHIM */
+.myCssPlayer .ghim{
+    position: absolute;
+    top: 12px;
+    right: 50px;
+    color: #fff;
+    font-size: 22px;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.player-ghim{
+    position: fixed;
+    left: 262px;
+    right: 23px;
+    z-index: 100;
+}
+
+.ghim-active{
+    color: #39739d !important;
+}
+
+.ghim-tigger{
+    margin-bottom: 174px !important;
+}
+
+/* BTN DOWN */
+.myCssPlayer .player-down{
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    color: #fff;
+    font-size: 22px;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+/* XOAY */
+@keyframes rotateRight{
+    100%{ transform:rotate(360deg); }
+}
+
+.aplayer-pic-spin{
+    transform-origin:50% 50%;
+    animation:30s rotateRight infinite linear; 
+}
+.aplayer .aplayer-pic .aplayer-pause{
+    display: none;
+}
+
+/* MINI */
+.miniPlayer{
+    box-shadow: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: none;
+    z-index: 1000 !important;
+}
+
+.aplayer-pic{
+    border-radius: 50%;
+}
+
+.miniPlayer .player-down, .miniPlayer .ghim{
+    display: none;
+}
+
+.player-up{
+    position: fixed;
+    left: 80px;
+    bottom: 28px;
+    color: #fff;
+    font-size: 22px;
+    opacity: 0.9;
+    cursor: pointer;
+    z-index: 100;
+    display: none;
+}
+
+/* PLAYLIST CSS */
+.aplayer-list{
+    background-color: #411465;
+    border-radius: 22px;
+}
+
+.aplayer .aplayer-list ol li:hover {
+    background: #74528f;
+}
+
+.aplayer-list-light {
+    background: #74528f !important;
+}
+
+.aplayer-list-author {
+    color: #fff !important;
+    opacity: .7;
+    float: right;
+    cursor: pointer;
+}
+
+.aplayer .aplayer-list ol li{
+    border-top: none !important;
+}
+
+.aplayer.aplayer-withlist .aplayer-info {
+    border-bottom: none !important;
+}
+
+.aplayer-list-index {
+    color: #fff;
+    opacity: .8;
+    margin-right: 12px;
+    cursor: pointer;
+}
